@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "build",
+    "rootDir": "src",
+    "module": "commonjs",
+    "importHelpers": true,
+    "pretty": true,
+    "stripInternal": true,
+    "removeComments": false,
+    "newLine": "LF",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "allowSyntheticDefaultImports": true,
+    "noEmitOnError": true
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "gmail-addon-boilerplate",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "description": "A TypeScript-based Gmail add-on Boilerplate",
+  "keywords": [
+    "gmail-add-ons",
+    "boilerplate",
+    "typescript"
+  ],
+  "scripts": {
+    "build": "npm run -s build:clean && rollup -c",
+    "build:clean": "rm -rf build/*",
+    "watch": "tsc -w",
+    "gas": "npm run -s build && cd build && gas",
+    "upload": "npm run -s build && npm run -s upload:files",
+    "upload:files": "cd build && gas push addon.js && gas push appsscript.js"
+  },
+  "author": "Dhaya Benmessaoud <d.benmessaoud@oodrive.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhayab/gmail-addon-boilerplate.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dhayab/gmail-addon-boilerplate/issues"
+  },
+  "homepage": "https://github.com/dhayab/gmail-addon-boilerplate#readme",
+  "devDependencies": {
+    "@types/google-apps-script": "^0.0.17",
+    "google-apps-script": "^2.3.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-copy": "^0.2.3",
+    "rollup-plugin-typescript2": "^0.7.0",
+    "typescript": "^2.5.3"
+  }
+}
