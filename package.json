@@ -14,9 +14,9 @@
     "build": "npm run -s build:clean && rollup -c",
     "build:clean": "rm -rf build/*",
     "watch": "tsc -w",
-    "gas": "npm run -s build && cd build && gas",
+    "gas": "mkdir -p build && cd build && gas",
     "upload": "npm run -s build && npm run -s upload:files",
-    "upload:files": "cd build && gas push addon.js && gas push appsscript.js"
+    "upload:files": "cd build && for FILE in `ls`; do gas push $FILE; done"
   },
   "author": "Dhaya Benmessaoud <d.benmessaoud@oodrive.com>",
   "repository": {
