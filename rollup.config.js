@@ -1,4 +1,6 @@
+import commonjs from 'rollup-plugin-commonjs';
 import copy from 'rollup-plugin-copy';
+import resolve from 'rollup-plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript2';
 
 const cleanGasOutput = () => {
@@ -25,6 +27,8 @@ export default {
 	treeshake: false,
 	plugins: [
 		typescript(),
+		resolve(),
+		commonjs(),
 		cleanGasOutput(),
 		copy({
 			'src/appsscript.json': 'build/appsscript.js'
