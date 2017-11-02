@@ -31,7 +31,7 @@ export default {
 		commonjs(),
 		cleanGasOutput(),
 		copy({
-			'src/appsscript.json': 'build/appsscript.js'
+			'src/appsscript.json': 'build/appsscript.json'
 		})
 	],
 };
