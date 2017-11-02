@@ -83,7 +83,7 @@ You code is now available in the associated Google Apps Script project!
 
 To view your Gmail add-on in action, you have to install it in the Gmail settings.
 
-First of all, retrieve the **Deployment ID** of your project. Go to your script, either manually by opening it from Google Drive, or from the terminal, with this command:
+First of all, retrieve the **Deployment ID** of your project. Go to your script, either manually by opening it from Google Drive, or from the terminal, with this command in the 'build' folder:
 
 ```shell
 $ npm run gas -- open
