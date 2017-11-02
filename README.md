@@ -62,7 +62,8 @@ $ npm run gas -- list
 [PROJECT_HASH] my-gmail-addon
 [PROJECT_HASH] Random Project
 
-# Link to your code (you can also specify the hash instead of the project name)
+# Linking the project to the build folder (you can also specify the hash instead of the project name)
+$ mkdir build && cd build
 $ npm run gas -- link my-gmail-addon
 ...
 Linking 'my-gmail-addon' to this folder... [✔]

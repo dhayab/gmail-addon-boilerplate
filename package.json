@@ -16,7 +16,7 @@
     "watch": "tsc -w",
     "gas": "mkdir -p build && cd build && gas",
     "upload": "npm run -s build && npm run -s upload:files",
-    "upload:files": "cd build && for FILE in `ls`; do gas push $FILE; done"
+    "upload:files": "cd build && gas push $FILE"
   },
   "author": "Dhaya Benmessaoud <d.benmessaoud@oodrive.com>",
   "repository": {
@@ -30,7 +30,7 @@
   "homepage": "https://github.com/dhayab/gmail-addon-boilerplate#readme",
   "devDependencies": {
     "@types/google-apps-script": "^0.0.17",
-    "google-apps-script": "^2.3.0",
+    "google-apps-script": "^2.5.0",
     "rollup": "^0.50.0",
     "rollup-plugin-commonjs": "^8.2.6",
     "rollup-plugin-copy": "^0.2.3",
