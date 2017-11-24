@@ -62,7 +62,8 @@ $ npm run gas -- list
 [PROJECT_HASH] my-gmail-addon
 [PROJECT_HASH] Random Project
 
-# Link to your code (you can also specify the hash instead of the project name)
+# Linking the project to the build folder (you can also specify the hash instead of the project name)
+$ mkdir build && cd build
 $ npm run gas -- link my-gmail-addon
 ...
 Linking 'my-gmail-addon' to this folder... [✔]
@@ -82,7 +83,7 @@ You code is now available in the associated Google Apps Script project!
 
 To view your Gmail add-on in action, you have to install it in the Gmail settings.
 
-First of all, retrieve the **Deployment ID** of your project. Go to your script, either manually by opening it from Google Drive, or from the terminal, with this command:
+First of all, retrieve the **Deployment ID** of your project. Go to your script, either manually by opening it from Google Drive, or from the terminal, with this command in the 'build' folder:
 
 ```shell
 $ npm run gas -- open
